@@ -12,7 +12,6 @@ let package = Package(
         .library(name: "pop", targets: ["pop"]),
         .library(name: "BFPaperButton", targets: ["BFPaperButton"]),
         .library(name: "HybridPageKit", targets: ["HybridPageKit"]),
-        .library(name: "MailCore2", targets: ["MailCore2"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -25,6 +24,5 @@ let package = Package(
         .binaryTarget(name: "pop", path: "pop.xcframework"),
         .binaryTarget(name: "BFPaperButton", path: "BFPaperButton.xcframework"),
         .binaryTarget(name: "HybridPageKit", path: "HybridPageKit.xcframework"),
-        .binaryTarget(name: "MailCore2", path: "MailCore2.xcframework"),
     ]
 )
