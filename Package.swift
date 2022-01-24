@@ -10,7 +10,7 @@ let package = Package(
         .library(name: "CryptoSwift", targets: ["CryptoSwift"]),
         .library(name: "pop", targets: ["pop"]),
         .library(name: "BFPaperButton", targets: ["BFPaperButton"]),
-        .library(name: "HybridPageKit", targets: ["BFPaperButton"]),
+        .library(name: "HybridPageKit", targets: ["HybridPageKit"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -22,6 +22,6 @@ let package = Package(
         .binaryTarget(name: "CryptoSwift", path: "CryptoSwift.xcframework"),
         .binaryTarget(name: "pop", path: "pop.xcframework"),
         .binaryTarget(name: "BFPaperButton", path: "BFPaperButton.xcframework"),
-        .binaryTarget(name: "HybridPageKit", path: "BFPaperButton.xcframework"),
+        .binaryTarget(name: "HybridPageKit", path: "HybridPageKit.xcframework"),
     ]
 )
