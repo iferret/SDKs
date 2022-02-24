@@ -1,10 +1,11 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-macos10.12 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=unchecked -O -module-name CryptoSwift
 @_exported import CryptoSwift
 import Darwin
 import Foundation
 import Swift
+import _Concurrency
 public struct CFB : CryptoSwift.BlockMode {
   public enum Error : Swift.Error {
     case invalidInitializationVector
@@ -1664,6 +1665,7 @@ extension CryptoSwift.CipherError : Swift.Equatable {}
 extension CryptoSwift.CipherError : Swift.Hashable {}
 extension CryptoSwift.SHA2.Variant : Swift.Equatable {}
 extension CryptoSwift.SHA2.Variant : Swift.Hashable {}
+extension CryptoSwift.SHA2.Variant : Swift.Sendable {}
 extension CryptoSwift.PKCS5.PBKDF1.Error : Swift.Equatable {}
 extension CryptoSwift.PKCS5.PBKDF1.Error : Swift.Hashable {}
 extension CryptoSwift.PKCS5.PBKDF1.Variant : Swift.Equatable {}
