@@ -11,7 +11,7 @@ let package = Package(
         .library(name: "pop", targets: ["pop"]),
         .library(name: "BFPaperButton", targets: ["BFPaperButton"]),
         .library(name: "HybridPageKit", targets: ["HybridPageKit"]),
-        .library(name: "GCDWebServer", targets: ["GCDWebServers"]),
+        .library(name: "GCDWebServers", targets: ["GCDWebServers"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -24,6 +24,6 @@ let package = Package(
         .binaryTarget(name: "pop", path: "pop.xcframework"),
         .binaryTarget(name: "BFPaperButton", path: "BFPaperButton.xcframework"),
         .binaryTarget(name: "HybridPageKit", path: "HybridPageKit.xcframework"),
-        .binaryTarget(name: "GCDWebServer", path: "GCDWebServers.xcframework"),
+        .binaryTarget(name: "GCDWebServers", path: "GCDWebServers.xcframework"),
     ]
 )
